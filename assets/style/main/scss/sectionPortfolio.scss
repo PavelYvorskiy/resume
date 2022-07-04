@@ -1,0 +1,154 @@
+.portfolio{
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../../../img/obuchenie-na-klaviature-onlayn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #0b1d26e2;
+    }
+}
+.portfolio-container{
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.portfolio-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 0;
+    transform: translateX(150%);
+    opacity: 0;
+    transition: all 1s ease 0.1s;
+    &::after{
+     content: '';
+     width: 60px;
+     height: 2px;
+     background: #00bcd4;
+     margin-left: 30px;
+    }
+    h2{
+     color: #f1f1f1; ;
+     font-weight: 300;
+     b{
+         color: #00bcd4;
+     }
+    }
+    &.active{
+     transform: translateX(0);
+    opacity: 1;
+    }
+}
+.portfolio-content{
+    max-width: 600px;
+    width: 100%;
+    min-height: 350px ;
+    // background-color: #00bcd4;
+     z-index: 2;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+     overflow: hidden;
+     position: relative;
+     &::before{
+        content: '';
+        position: absolute;
+        width: 3px;
+        min-height: 350px;
+        border-radius: 2px;
+        background: linear-gradient(#00bbd400, #00bcd4);
+        transform: translateY(-120%);
+        transition: all 1s ease 0.5s;
+     }
+     &.active{
+            &::before{
+                transform: translateY(0);
+                transition: all 1s ease 0.5s;
+            }
+        
+     }
+}
+.block{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+     h3{
+        color: #f1f1f1;
+        b{
+            color: #00bcd4;
+            font-weight: 200;
+        }
+     }
+    &__right{
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateX(100%);
+        transition: all 1s ease 0.3s;
+        &::before{
+            content: '';
+            width: 80px;
+            height: 3px;
+            border-radius: 2px;
+            background: linear-gradient( 90deg,#00bbd400, #00bcd4);
+            margin-right: 10px;
+        }
+        &_2{
+            transition: all 1s ease 0.9s;
+            &::before{
+                content: '';
+                width: 160px;
+                height: 3px;
+                border-radius: 2px;
+                background: linear-gradient( 90deg,#00bbd400, #00bcd4);
+                margin-right: 10px;
+            }
+        }
+        &.active{
+            transform: translateX(0);
+            transition: all 1s;
+        }
+
+    }
+    &__left{
+        align-items: center;
+        justify-content: flex-start;
+        transform: translateX(-100%);
+        transition: all 1s ease 0.6s;
+        &::after{
+            content: '';
+            width: 160px;
+                height: 3px;
+                border-radius: 2px;
+                background: linear-gradient( 90deg,#00bcd4, #00bbd400);
+                margin-left: 10px;
+
+        }
+        &.active{
+            transform: translateX(0);
+            transition: all 1s;
+        }
+    }
+    
+
+}
