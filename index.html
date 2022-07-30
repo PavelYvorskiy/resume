@@ -26,7 +26,7 @@
         <div class="navbar">
             <ul class="navmenu">
                 <li class="navmenu__item"><a href="#home" class="navmenu__link">Главная</a></li>
-                <li class="navmenu__item"><a href="#skills" class="navmenu__link">Навыки</a></li>
+                <li class="navmenu__item"><a href="#container-card" class="navmenu__link">Навыки</a></li>
                 <li class="navmenu__item"><a href="#portfolio" class="navmenu__link">Портфолио</a></li>
                 <li class="navmenu__item"><a href="#experience" class="navmenu__link">Опыт</a></li>
                 <li class="navmenu__item"><a href="#contacts" class="navmenu__link">Контакты</a></li>
@@ -38,7 +38,7 @@
         <div class="navbar-mob">
             <ul class="navmenu-mob">
                 <li class="navmenu__item mob-item"><a href="#home" class="navmenu__link">Главная</a></li>
-                <li class="navmenu__item mob-item"><a href="#skills" class="navmenu__link">Навыки</a></li>
+                <li class="navmenu__item mob-item"><a href="#container-card" class="navmenu__link">Навыки</a></li>
                 <li class="navmenu__item mob-item"><a href="#portfolio" class="navmenu__link">Портфолио</a></li>
                 <li class="navmenu__item mob-item"><a href="#experience" class="navmenu__link">Опыт</a></li>
                 <li class="navmenu__item mob-item"><a href="#contacts" class="navmenu__link">Контакты</a></li>
@@ -59,58 +59,71 @@
                 </div>
             </div>
         </section>
-        <section id="skills" class="skills">
-            <div class="skills-container">
-                <div class="skills-title _anim-items">
+        <section id="container-card" class="container-card">
+            <div class="content-card-block">
+                <div class="content-card-block-title _anim-items">
                     <h2><b>H</b>авыки</h2>
                 </div>
+                <div class="content-card animationCounter _anim-items _anim-no-hide">
+                    <div class="card">
+                        <div class="content">
+                            <h2>HTML/CSS</h2>
+                            <span>
+                                <h3 data-digits-counter="2000">85</h3>
+                                <h3>%</h3>
+                            </span>
+                            <div class="card-text">
+                                <p>HTML5/CSS3 scss, умение верстать по методологии БЭМ, css animation, адаптивная
+                                    верстка,
+                                    верстка макетов с Figma</p>
+                            </div>
 
-                <div class="animationCounter skills-content">
-                    <div class="skills-content__item _anim-items ">
-                        <h3 class="skills-content__title">HTML/CSS</h3>
-                        <span class="skills-content__subtitle">
-                            <h3 data-digits-counter="2000">85</h3>
-                            <h3>%</h3>
-                        </span>
-                        <div class="skills-content__description">
-                            <p>HTML5/CSS3 scss, умение верстать по методологии БЭМ, css animation, адаптивная верстка,
-                                верстка макетов с Figma
-                            </p>
                         </div>
                     </div>
-                    <div class="skills-content__item _anim-items">
-                        <h3 class="skills-content__title">JavaScript</h3>
-                        <span class="skills-content__subtitle">
-                            <h3 data-digits-counter="2500">55</h3>
-                            <h3>%</h3>
-                        </span>
-                        <div class="skills-content__description">
-                            <p>ES6+ базовое написания скриптов, умение работать с чужим кодом, понимание и работа с
-                                сторонними плагинами</p>
+                    <div class="card">
+                        <div class="content">
+                            <h2>JS</h2>
+                            <span>
+                                <h3 data-digits-counter="2500">55</h3>
+                                <h3>%</h3>
+                            </span>
+                            <div class="card-text">
+                                <p>ES6+ базовое написания скриптов, умение работать с чужим кодом, понимание и работа с
+                                    сторонними плагинами</p>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="skills-content__item _anim-items">
-                        <h3 class="skills-content__title">WordPress</h3>
-                        <span class="skills-content__subtitle">
-                            <h3 data-digits-counter="3000">65</h3>
-                            <h3>%</h3>
-                        </span>
-                        <div class="skills-content__description">
-                            <p>Умение создовать темы с нуля, работа с готовыми темами. Работа с плагинами WP</p>
+                    <div class="card">
+                        <div class="content">
+                            <h2>WordPress</h2>
+                            <span>
+                                <h3 data-digits-counter="3000">65</h3>
+                                <h3>%</h3>
+                            </span>
+                            <div class="card-text">
+                                <p>Умение создовать темы с нуля, работа с готовыми темами. Работа с плагинами WP</p>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="skills-content__item _anim-items">
-                        <h3 class="skills-content__title">framework</h3>
-                        <span class="skills-content__subtitle">
-                            <h3 data-digits-counter="3500">30</h3>
-                            <h3>%</h3>
-                        </span>
-                        <div class="skills-content__description">
-                            <p>На данный момент изучаю React</p>
+                    <div class="card">
+                        <div class="content">
+                            <h2>Framework</h2>
+                            <span>
+                                <h3 data-digits-counter="3500">30</h3>
+                                <h3>%</h3>
+                            </span>
+                            <div class="card-text">
+                                <p>На данный момент изучаю React</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </section>
         <section id="portfolio" class="portfolio">
             <div class="portfolio-container">
@@ -194,6 +207,8 @@
     <script src="./assets/script/main/counterAnimation.js"></script>
     <script src="./assets/script/main/scrollAnimation.js"></script>
     <script src="./assets/script/main/touchMob.js"></script>
+    <script src="./assets/script/main/vanilla-tilt.js"></script>
+    <script src="./assets/script/main/card-anim.js"></script>
 </body>
 
 </html>
