@@ -34,8 +34,12 @@
 .navmenu__item {
   padding: 0 20px;
   display: flex;
-  flex-direction: column;
   position: relative;
+}
+.navmenu__item b {
+  color: #00bcd4;
+  padding: 0 3px;
+  font-weight: inherit;
 }
 .navmenu__link {
   color: #f1f1f1;
